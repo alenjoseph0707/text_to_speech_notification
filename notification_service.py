@@ -7,7 +7,7 @@ from datetime import datetime
 
 # Generate a text notification
 def generate_notification():
-    return " your device have been hacked."
+    return " this is an text to speech notification."
 
 # Convert text to speech and save as an audio file
 def text_to_speech(text):
@@ -18,8 +18,8 @@ def text_to_speech(text):
 
 # Send the audio file via email
 def send_email(audio_file_path, to_email):
-    from_email = "getsetgo521@gmail.com"
-    password = " muepwobvpttexccw"  # Use an App Password if you have 2-Step Verification enabled
+    from_email = "yourfrom mail"
+    password = "your password"  # Use an App Password if you have 2-Step Verification enabled
     
     msg = MIMEMultipart()
     msg['From'] = "Unknown <>"
@@ -48,6 +48,6 @@ if __name__ == '__main__':
     audio_file_path = text_to_speech(notification_text)
     
     # Replace with the recipient's email address
-    recipient_email = 'alenjoseph0707@gmail.com'
+    recipient_email = 'your recipient mail'
     
     send_email(audio_file_path, recipient_email)
