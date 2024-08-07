@@ -8,7 +8,7 @@ def main():
     audio_file_path = text_to_speech(text)
     
     # Email address of the receiver
-    receiver_email = "alenjoseph0707@gmail.com"
+    receiver_email = "yourrecievermail"
     
     # Send the audio notification via email
     send_email(audio_file_path, receiver_email)
